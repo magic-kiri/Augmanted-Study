@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Quiz1Activity">
+
+<!--    <View-->
+<!--        android:id="@+id/view9"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="#C81D1A1A"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/button" />-->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#B2ABECEE"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Human physiology: Locomotion \n                and Movement \n            (চলন ও অঙ্গচালনা)"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C81D1A1A" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/questions"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scrollY="@dimen/activity_vertical_margin"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toTopOf="@+id/quiz1Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/c1q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="১) মানুষের কপাল কোন অস্থি দিয়ে তৈরি হয়?"
+                android:textColor="#050505"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/c1q1o1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:checked="false"
+                    android:text="ফ্রনটাল"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q1o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="অক্সিপিটাল"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q1o3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="টেম্পোরাল"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q1o4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="প্যারাইটাল"
+                    android:textColor="#050505" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/c1q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="২)নিচের কোনটি বক্ষ অস্থিচক্রের হাড়?"
+                android:textColor="#050505"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/c1q2o1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:checked="false"
+                    android:text="স্ফেনোয়েড"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q2o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="ক্লাভিকল"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q2o3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="টপিউবিস"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q2o4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="এথময়েড"
+                    android:textColor="#050505" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/c1q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="৩) চলনের সময় হাঁটুকে ভাঁজ করে কোন \n     মাংসপেশি?"
+                android:textColor="#050505"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/c1q3o1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:checked="false"
+                    android:text="বাইসেপস ফিমরিস"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q3o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="ট্রাইসেপস ফিমরিস"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q3o3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="ড্যালটয়েড"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q3o4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="রেকটাস"
+                    android:textColor="#050505" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/c1q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="৪) কয়টি অস্থি নিয়ে মুখমন্ডল গঠিত?"
+                android:textColor="#050505"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/c1q4o1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:checked="false"
+                    android:text="১২"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q4o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="১৩"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q4o3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="১৪"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q4o4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="১৫"
+                    android:textColor="#050505" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/c1q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="৫) ক্যালসিফাইড তরুণাস্থি কোথায় পাওয়া যায়?"
+                android:textColor="#050505"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/c1q5o1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:checked="false"
+                    android:text="হেড অফ হিমেরাস"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q5o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="স্তন্যপায়ীর নাক"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q5o3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="আলজিহবা"
+                    android:textColor="#050505" />
+
+                <RadioButton
+                    android:id="@+id/c1q5o4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#050505"
+                    android:text="মূত্রথলি"
+                    android:textColor="#050505" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/quiz1Submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#59B3BE"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

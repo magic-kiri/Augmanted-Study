@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowModelActivity">
+
+    <fragment
+        android:id = "@+id/sceneform_ux_fragment"
+        android:name = "com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height = "wrap_content">
+
+
+            <ImageView
+                android:id="@+id/id_skull"
+                android:src="@drawable/skull"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id = "@+id/id_ribcage"
+                android:src="@drawable/ribcage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+
+            <ImageView
+                android:id = "@+id/id_skeleton"
+                android:src="@drawable/skeleton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/id_femur"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/femur" />
+
+            <ImageView
+                android:id = "@+id/id_hepatitisLiver"
+                android:src="@drawable/hepatitisliver"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+
+            <ImageView
+                android:id = "@+id/id_brain"
+                android:src="@drawable/brain"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id = "@+id/id_teeth"
+                android:src="@drawable/teeth"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>

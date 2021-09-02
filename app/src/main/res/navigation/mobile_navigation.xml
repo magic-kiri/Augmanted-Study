@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.augmantedreality.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.augmantedreality.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_perfomance"
+        android:name="com.example.augmantedreality.ui.performance.PerfomanceFragment"
+        android:label="@string/menu_perfomance"
+        tools:layout="@layout/fragment_perfomance" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.augmantedreality.ui.credit.CreditFragment"
+        android:label="@string/menu_credit"
+        tools:layout="@layout/fragment_credit" />
+
+    <fragment
+        android:id="@+id/nav_logOut"
+        android:name="com.example.augmantedreality.ui.log_out.LogOutFragment"
+        android:label="Log Out"
+        tools:layout="@layout/fragment_log_out" />
+</navigation>
